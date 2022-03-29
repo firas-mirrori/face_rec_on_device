@@ -297,7 +297,7 @@ Map<String, dynamic>? runFaceMesh(Map<String, dynamic> params) {
     final resultScore = result['score'];
     print("detect face square : $resultScore ");
     //print(result["score"]);
-    bool FaceDetect_Then_FaceMesh = true;
+    bool FaceDetect_Then_FaceMesh = false;
     final result_mesh;
     if(FaceDetect_Then_FaceMesh) {
       result_mesh = faceMesh.predict_2(image, result);
